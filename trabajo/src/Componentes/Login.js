@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import '../Paginas/Auth/Estilos.css'; // Asegúrate de que este archivo esté importado
+import '../Paginas/Auth/Estilos.css'; 
 
 function Login() {
   const [user, setUser] = useState('');
@@ -9,7 +9,6 @@ function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Redirige directamente a la página de camiones sin validar credenciales
     navigate('/Camion');
   };
 
@@ -32,7 +31,7 @@ function Login() {
         <button type="submit">Ingresar</button>
       </form>
       <div className="register-link">
-        <p>¿No tienes cuenta? <Link to="/registro">Regístrate aquí</Link></p>
+        <p>¿No tienes una cuenta? <Link to="/registro">¡Regístrate aquí!</Link></p>
       </div>
     </div>
   );

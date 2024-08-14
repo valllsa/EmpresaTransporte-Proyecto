@@ -1,7 +1,7 @@
 // WelcomePage.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../Paginas/Auth/Estilos.css'; // Asegúrate de que la ruta sea correcta
+import '../Paginas/Auth/Estilos.css'; 
 
 const PaginaBienvenida = () => {
   return (
@@ -14,7 +14,7 @@ const PaginaBienvenida = () => {
         <li>Encontrar el camión más eficiente para una carga específica.</li>
       </ul>
       <p>Descubre lo que puedes hacer en nuestra pagina usando los botones a continuación.
-         ¡Estamos aquí para ayudarte a simplificar toda la geston!
+         ¡Estamos aquí para ayudarte a simplificar toda la gestion!
       </p>
       <div className="bienvenida-buttons">
         <Link to="/login">

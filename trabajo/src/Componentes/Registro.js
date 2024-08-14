@@ -10,9 +10,8 @@ function Registro() {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    // Aquí va la lógica de registro
     console.log('Usuario registrado:', user);
-    navigate('/login'); // Redirige a la página de login después de registrarse
+    navigate('/login'); 
   };
 
   return (

@@ -1,48 +1,58 @@
-/* ESTILOS LOGIN Y REGISTRO */
+/* ====== ESTILOS LOGIN Y REGISTRO ====== */
 .login-container, .register-container {
-    width: 500px; /* Ancho máximo para el contenedor */
+    width: 600px; /* Ancho máximo para el contenedor */
     margin: 180px auto;
-    padding: 80px;
-    background-color: #fff; /* Fondo blanco para el contenedor del login */
+    padding: 75px;
+    background-color: #fff; /* Fondo blanco */
     border-radius: 8px;
     border: 2px solid #d63384; /* Borde rosa oscuro */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+}
+
+.login-container h2 {
+    text-align: center; /* Centrar el texto del encabezado */
+    margin-bottom: 20px; /* Espacio inferior */
 }
 
 /* Estilos para el formulario */
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px; /* Espacio entre elementos del formulario */
 }
 
 /* Estilos para los inputs */
 input[type="text"], input[type="password"], input[type="number"] {
-    padding: 12px;
+    padding: 15px;
     border: 2px solid #d63384; /* Borde rosa oscuro */
     border-radius: 4px;
     background-color: #ffe6f2; /* Fondo rosa claro */
-    color: #333;
+    color: #333; /* Color del texto */
     font-size: 16px;
+    transition: border-color 0.3s ease; /* Transición suave para el borde */
 }
 
-input::placeholder {
-    color: #d63384; /* Color del texto del placeholder */
+input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus {
+    border-color: #c2185b; /* Cambia el color del borde al enfocar */
 }
 
 /* Estilos para los botones */
 button {
-    padding: 10px;
+    padding: 15px;
     background-color: #d63384; /* Rosa oscuro */
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    margin: 15px 0; /* Espacio superior e inferior */
+    text-align: center; /* Centra el texto del botón */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
     background-color: #c2185b; /* Rosa más oscuro al pasar el cursor */
+    transform: scale(1.02); /* Aumenta el tamaño ligeramente al pasar el cursor */
 }
 
 /* Enlace para el registro */
@@ -55,28 +65,27 @@ button:hover {
     color: #d63384; /* Color del enlace */
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
+    transition: color 0.3s ease;
 }
 
 .register-link a:hover {
+    color: #c2185b; /* Cambia el color al pasar el cursor */
     text-decoration: underline;
 }
-
-
 
 /* ESTILOS DASHBOARD */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7e2ec; /* Rosa claro para el fondo */
+    background-color: #f1dfdf; /* Rosa claro para el fondo */
     padding: 20px;
     color: #333;
     margin: 0;
 }
 
-/* Estilos del título */
 h1 {
     text-align: center;
-    color: #000000; /* Rosa oscuro para el título */
+    color: #ff85c1; /* Rosa oscuro para el título */
     margin-bottom: 20px;
 }
 
@@ -84,44 +93,48 @@ h1 {
 .container {
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #f7e2ec;
+    background-color: #f7f7f7; /* Fondo gris claro */
     border-radius: 8px;
-    border: 4px solid #d63384; /* Borde rosa oscuro para cada sección */
+    border: 2px solid #d63384; /* Borde rosa oscuro */
 }
 
 /* Contenedor de pestañas */
 .tabs {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .tabs button {
-    padding: 10px 15px;
-    background-color: #ff69b469; /* Botón rosa */
-    color: #000000;
+    padding: 10px 20px;
+    background-color: #d63384; /* Botón rosa */
+    color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 20px;
 }
 
 .tabs button:hover {
-    background-color: #ff85c1; /* Botón rosa más claro al pasar el cursor */
+    background-color: #c2185b; /* Botón rosa más oscuro al pasar el cursor */
 }
 
 /* Contenedor de contenido de pestañas */
 .tab-content {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
 }
 
-/* Contenedor de formularios */
+/* FORMULARIOS */
 .form-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #ffe6f2; /* Espacio entre los formularios */
+    background-color: #ffe6f2; /* Fondo rosa claro */
+    padding: 22px; /* Espacio interno */
+    border-radius: 8px;
+    border: 2px solid #d63384; /* Borde rosa oscuro */
 }
 
 /* Estilos de select e input */
@@ -129,36 +142,39 @@ select, input[type="number"] {
     padding: 10px;
     border: 2px solid #d63384; /* Borde rosa oscuro */
     border-radius: 4px;
-    background-color: #ffe6f2; /* Fondo rosa claro */
+    background-color: #fdfdfd; /* Fondo blanco */
+    color: #333; /* Color del texto */
 }
 
 input::placeholder {
     color: #d63384; /* Color del texto del placeholder */
 }
 
-/* Estilos de la página de bienvenida */
+/* ESTILOS PARA LA PÁGINA DE BIENVENIDA  */
 .bienvenida-container {
     width: 700px;
     margin: 80px auto;
-    padding: 100px;
-    background-color: #fff;
+    padding: 50px;
+    background-color: #fff; /* Fondo blanco */
     border-radius: 8px;
-    border: 2px solid #d63384;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid;
+    border-image: linear-gradient(to right, #d63384, #e57373) 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
     text-align: center;
 }
 
 .bienvenida-container h1 {
     color: #d63384;
     margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para el texto */
 }
 
 .bienvenida-container p {
-    color: #333; /* Color del texto */
-    margin-bottom: 20px; /* Espacio debajo del párrafo */
-    font-size: 20px; /* Tamaño de la fuente, ajusta según lo necesario */
-    line-height: 1.6; /* Altura de la línea para mejor legibilidad */
-    font-family: Arial, sans-serif; /* Tipo de fuente para el texto */
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: Arial, sans-serif;
 }
 
 .bienvenida-container ul {
@@ -170,6 +186,17 @@ input::placeholder {
 
 .bienvenida-container ul li {
     margin: 10px 0;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.bienvenida-container ul li:before {
+    content: "✔";
+    color: #d63384;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .bienvenida-buttons {
@@ -177,18 +204,38 @@ input::placeholder {
 }
 
 .bienvenida-button {
-    padding: 10px 20px;
+    padding: 15px 30px;
     background-color: #d63384;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 10px;
     text-decoration: none;
     font-size: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .bienvenida-button:hover {
     background-color: #c2185b;
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente al pasar el cursor */
 }
 
+/* ====== DISEÑO RESPONSIVO ====== */
+@media (max-width: 768px) {
+    .bienvenida-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .bienvenida-button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .login-container, .register-container {
+        width: 90%;
+        padding: 50px;
+    }
+}
