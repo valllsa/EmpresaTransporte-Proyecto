@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../Paginas/Auth/Estilos.css'
+import '../VistaCliente/Estilos.css'
 
-function Registro() {
+function RegistroCliente() {
   const [name,setName] = useState('');
   const [user, setUser] = useState('');
   const [password, setPassword] = useState('')
@@ -11,7 +11,7 @@ function Registro() {
   const handleRegister = (e) => {
     e.preventDefault();
     console.log('Usuario registrado:', user);
-    navigate('/login'); 
+    navigate('/loginCliente'); 
   };
 
   return (
@@ -49,4 +49,4 @@ function Registro() {
   );
 }
 
-export default Registro;
+export default RegistroCliente;

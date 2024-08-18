@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import '../Paginas/Auth/Estilos.css'; 
+import '../VistaCliente/Estilos.css'; 
 
-function Login() {
+function LoginCliente() {
   const [user, setUser] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
-    navigate('/Camion');
+    navigate('/MainCliente');
   };
 
   return (
@@ -31,10 +31,10 @@ function Login() {
         <button type="submit">Ingresar</button>
       </form>
       <div className="register-link">
-        <p>¿No tienes una cuenta? <Link to="/registro">¡Regístrate aquí!</Link></p>
+        <p>¿No tienes una cuenta? <Link to="/registroCliente">¡Regístrate aquí!</Link></p>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default LoginCliente;

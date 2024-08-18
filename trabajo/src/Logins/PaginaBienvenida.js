@@ -1,7 +1,7 @@
 // WelcomePage.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../Paginas/Auth/Estilos.css'; 
+import '../VistaCliente/Estilos.css'; 
 
 const PaginaBienvenida = () => {
   return (
@@ -17,11 +17,17 @@ const PaginaBienvenida = () => {
          ¡Estamos aquí para ayudarte a simplificar toda la gestion!
       </p>
       <div className="bienvenida-buttons">
-        <Link to="/login">
-          <button className="bienvenida-button">Ingresar</button>
+        <Link to="/LoginCliente">
+          <button className="bienvenida-button">Cliente</button>
         </Link>
-        <Link to="/registro">
-          <button className="bienvenida-button">Registrarse</button>
+        <Link to="/LoginAdmin">
+          <button className="bienvenida-button">Administrador</button>
+        </Link>
+        <Link to="/LoginTrans">
+          <button className="bienvenida-button">Transportador</button>
+        </Link>
+        <Link to="/LoginDcamion">
+          <button className="bienvenida-button">Dueño Camion</button>
         </Link>
       </div>
     </div>
